@@ -7,17 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.aalaa.firsttask1.databinding.FragmentTwoBinding
 
-class TwoFragment : Fragment() {
 
-    lateinit var binding:FragmentTwoBinding
+// this is the newest way to make fragment
+class TwoFragment : Fragment(R.layout.fragment_two) {
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        binding=FragmentTwoBinding.inflate(layoutInflater)
-        return binding.root
-    }
 
 }
